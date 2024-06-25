@@ -15,3 +15,7 @@
 - Print just a first line to `stdout`:
 
 `{{command}} | sed -n '1p'`
+
+- Deletes the 10th line from the file and modifies the file in place:
+
+`sed -i -e '10d' {{path/to/file}}`
